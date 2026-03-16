@@ -1,0 +1,48 @@
+# Environment
+venv/
+node_modules/
+.venv/
+env/
+*.log
+
+# Python Cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+
+# AI Models (Weights)
+*.pt
+*.onnx
+*.engine
+*.tflite
+*.pb
+
+# Project Data
+database.json
+gallery/
+*.jpg
+*.png
+*.mp4
+
+# SSL & Secrets
+*.pem
+*.crt
+*.key
+openssl.cnf
+.env
+.env.*
+
+# AI Agent & IDE
+.agent/
+.gemini/
+.vscode/
+.idea/
+brain/
+/tmp/
+
+# Build Artefacts
+frontend_react/dist/
+frontend_react/.vite/

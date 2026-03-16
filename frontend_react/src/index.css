@@ -1,0 +1,65 @@
+@import "tailwindcss";
+
+@theme {
+  --color-cyber-900: #050507;
+  --color-cyber-800: #0c0c10;
+  --color-cyber-700: #1a1a23;
+  --color-neon: #a855f7;
+  --color-neon-dim: rgba(168, 85, 247, 0.15);
+  --color-cyber-red: #ff003c;
+  
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-cyber-900 text-gray-100 antialiased overflow-hidden;
+  }
+}
+
+@layer components {
+  .glass-panel {
+    @apply bg-cyber-800/80 backdrop-blur-md border border-white/5 rounded-2xl shadow-2xl;
+  }
+  
+  .neon-text {
+    @apply text-neon drop-shadow-[0_0_5px_rgba(168,85,247,0.5)];
+  }
+
+  .neon-button {
+    @apply bg-neon text-white font-black tracking-widest px-6 py-2 rounded-lg 
+           hover:brightness-110 hover:shadow-[0_0_15px_#a855f7] transition-all 
+           active:scale-95 disabled:opacity-50 uppercase text-xs;
+  }
+
+  .stop-button {
+    @apply bg-cyber-red text-white font-black tracking-widest px-6 py-2 rounded-lg 
+           hover:brightness-110 hover:shadow-[0_0_15px_#ff003c] transition-all 
+           active:scale-95 uppercase text-xs;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    width: 4px;
+  }
+  .custom-scrollbar::-webkit-scrollbar-track {
+    @apply bg-transparent;
+  }
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full hover:bg-neon/50 transition-colors;
+  }
+}
+
+/* Animations */
+@keyframes scanline {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.scanline::after {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; height: 100px;
+  background: linear-gradient(to bottom, transparent, rgba(168, 85, 247, 0.05), transparent);
+  animation: scanline 4s linear infinite;
+  pointer-events: none;
+}

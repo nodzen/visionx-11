@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+redis
+python-multipart
+imagehash
+Pillow
+ultralytics
+opencv-python
+numpy
+deepface
+tf-keras
+tensorflow-cpu
+scipy
+scikit-learn
