@@ -62,4 +62,6 @@ This system is designed for **Windows** environments.
 ## 📝 Performance Tuning
 
 - MJPEG stream quality is set to **70%** for a balance of clarity and speed.
-- Neural inference skips every 2nd frame for maximum visual responsiveness.
+## 📄 License
+
+This project is licensed under the [GNU Affero General Public License v3.0 (AGPL-3.0)](LICENSE) - see the [LICENSE](LICENSE) file for details. This ensures compatibility with requirements from core dependencies like YOLOv11 and promotes open collaboration.
