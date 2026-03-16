@@ -2,7 +2,7 @@
 
 VisionX-11 Pro is a high-performance, native AI surveillance and identification system. It combines state-of-the-art YOLOv11 posture tracking with deep fashion classification and face-aware re-identification to provide a professional "Command Center" monitoring experience.
 
-![Dashboard Preview](https://raw.githubusercontent.com/placeholder/visionx11/main/preview.png)
+![Dashboard Preview](https://raw.githubusercontent.com/nodzen/visionx-11/refs/heads/main/frontend_react/public/favicon.svg)
 
 ## 🚀 Key Features
 
